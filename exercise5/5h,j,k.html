@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+
+</head>
+
+<body>
+
+  <p>Cart Quantity</p>
+
+  <button onclick="
+  console.log(`Cart Quantity : ${CardQantity}`);
+  ">
+    Show Quantity
+  </button>
+
+  <button onclick="
+  CardQantity ++;
+  // CardQantity += 1;
+  console.log(`Card Quantity : ${CardQantity}`);
+  ">
+    Add to cart
+  </button>
+
+  <button onclick="
+  CardQantity +=2;
+  console.log(`Card Quantity :${CardQantity}`);
+  ">
+    +2
+  </button>
+
+  <button onclick="
+  CardQantity += 3;
+  console.log(`Card quantity :${CardQantity}`);
+  ">
+    +3
+  </button>
+
+   <button onclick="
+   CardQantity +=4;
+   console.log(`Card Quantity : ${CardQantity}`);
+   ">
+    +4
+   </button>
+
+   <button onclick="
+   CardQantity +=5;
+   console.log(`CardQantity: ${CardQantity}`);
+   ">
+    +5
+   </button>
+
+  <button onclick="
+     CardQantity -=2;
+     console.log(`CardQantity : ${CardQantity}`);
+     
+     ">
+    -2
+  </button>
+
+  <button onclick="
+     CardQantity -=3;
+     console.log(`CardQantity : ${CardQantity}`);
+     
+     ">
+    -3
+  </button>
+
+
+   <button onclick="
+   CardQantity --;
+   console.log(`CardQantity : ${CardQantity}`);
+   
+   ">
+    Remove From Cart
+   </button>
+
+  <button onclick="
+  CardQantity =0;
+  console.log(`Card Reset: New Qantity ${CardQantity}`);
+  ">
+    Reset Cart
+  </button>
+
+  <script>
+    // can change the value of card Quantity
+    let CardQantity = 0;
+
+    // cant change the value of varar
+    // const varar = 2;
+
+  </script>
+</body>
+
+</html>

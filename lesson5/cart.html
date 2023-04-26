@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  
+</head>
+
+<body>
+
+  <p>Cart Quantity</p>
+
+  <button onclick="
+  console.log(`Cart Quantity : ${CardQantity}`);
+  ">
+    Show Quantity
+  </button>
+
+  <button onclick="
+  // CardQantity ++;
+  // CardQantity += 1;
+  // console.log(`Card Quantity : ${CardQantity}`);
+
+      if(CardQantity  +1 > 10){
+        alert('The cart is full');
+      }else {
+        CardQantity ++;
+        console.log (`CardQantity : ${CardQantity}`);
+      }
+  ">
+    Add to cart
+  </button>
+
+  <button onclick="
+      if(CardQantity +2 >= 10){
+        alert('your cart limit is 10 ');
+      }else{
+        CardQantity +=2;
+      console.log(`Card Quantity :${CardQantity}`);
+      }
+ 
+  ">
+    +2
+  </button>
+
+  <button onclick="
+      if(CardQantity +3 >=10 ){
+        alert('Your Cart is full');
+      }else{
+        CardQantity += 3;
+      console.log(`Card quantity :${CardQantity}`);
+  }
+  
+  "
+  >
+    +3
+  </button>
+
+  <button onclick="
+  if(CardQantity +4 >= 10){
+    alert('The cart is full');
+  }else{
+    CardQantity +=4;
+     console.log(`Card Quantity : ${CardQantity}`);
+  }
+     
+     ">
+    +4
+  </button>
+  
+  <button onclick="
+    if(CardQantity +5 > 10){
+      alert('cart quantity is full');
+      
+    }else{
+      CardQantity +=5;
+     console.log(`CardQantity: ${CardQantity}`);
+    }
+    
+     ">
+    +5
+  </button>
+  
+  <button onclick="
+      if(CardQantity -2 < 0 ){
+        alert('Not enought item in the cart');
+      }else{
+       CardQantity -=2;
+       console.log(`CardQantity : ${CardQantity}`); 
+      }
+      
+       
+       
+       ">
+    -2
+  </button>
+  
+  <button onclick="
+    if(CardQantity -3 < 0){
+      alert('Not enousght item in the cart');
+    }else{
+      CardQantity -=3;
+       console.log(`CardQantity : ${CardQantity}`);
+    }
+       ">
+    -3
+  </button>
+
+
+  <button 
+  onclick="
+  CardQantity =0;
+  console.log(`Card Reset: New Qantity ${CardQantity}`);
+  "
+  >
+    Reset Cart
+  </button>
+
+<script>
+  // can change the value of card Quantity
+  let CardQantity =0;
+
+  // cant change the value of varar
+    const varar = 2;
+
+</script>  
+</body>
+</html>
