@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8d</title>
+</head>
+<body>
+  <script>
+  const  product1={
+      name:'basketball',
+      price:983
+    };
+    const product2={
+      name:'headset',
+      price:870
+    }
+    function compareprice(product1,product2){
+        if(product1.price > product2.price){
+          console.log('Product 1 has more price then product2');
+          return product1.price;
+        }
+        else{
+          console.log('product 2 has more proce');
+          return product2.price; 
+        }
+        }
+        
+    console.log(compareprice(product1,product2));
+  </script>
+</body>
+</html>

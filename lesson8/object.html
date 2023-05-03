@@ -20,6 +20,69 @@
   product.name='mouse';
   console.log(product);
 */
+
+
+/*
+const product1={
+  name:'shoes',
+  price:12342,
+  rating : {
+    star:3.9,
+    count :87
+  },
+  fun:function function1(){
+    console.log('function inside objects');
+  }
+};
+  console.log(product1.rating.count);
+  product1.fun();
+
+
+  const jsonString=JSON.stringify(product1);
+  console.log(JSON.stringify(product1));
+
+  
+
+  console.log(JSON.parse(jsonString));
+*/
+    console.log('hello'.length);
+    console.log('hello'.toUpperCase());
+    console.log('HELLO'.toLocaleLowerCase());
+    const object1={
+      message :'hello'
+    };
+    const object2=object1;
+
+    object1.message='good job';
+    console.log(object1);
+
+    const object3={
+      message:'Good job'
+    };
+    console.log(object3 === object1);
+     
+    const objec4={
+      message : 'Good job ',
+      price :123
+    };
+
+    // const message =object4.message;
+    // destructure
+    const {message,price}=objec4;
+    console.log(price);
+    console.log(message);
+
+    const object5={
+      message,
+      method :function function1(){
+        console.log('method');
+      }
+      // message : message
+    };
+  
+    console.log(object5);
+    object5.method();
+    
   </script>
 </body>
 </html>
