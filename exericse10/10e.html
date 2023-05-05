@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .Game{
+    background-color: black;
+    color: white;
+    padding:10px;
+    cursor: pointer;
+  }
+  .is-toggled{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    cursor:pointer;
+    padding: 10px;
+  }
+
+  .music{
+    background-color: black;
+    color: white;
+    padding:10px;
+    cursor: pointer;
+  }
+  .is-togglemusic{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    cursor:pointer;
+    padding: 10px;
+  }
+
+</style>
+<body>
+  <button class="Game" onclick="
+    const buttonElement =document.querySelector('.Game');
+  if(!buttonElement.classList.contains('is-toggled')){
+    buttonElement.classList.add('is-toggled');
+
+  }else{
+    buttonElement.classList.remove('is-toggled')
+  };
+    ">
+    Gaming
+  </button>
+
+  <button class="music" onclick=" const buttonElement1=document.querySelector('.music');
+  if(!buttonElement1.classList.contains('is-togglemusic')){
+    buttonElement1.classList.add('is-togglemusic');
+  }else{
+    buttonElement1.classList.remove('is-togglemusic');
+  }">
+    music
+  </button>
+
+
+ 
+</body> 
+<script src="./10e.js">  
+
+  
+  
+</script>
+</html>
